@@ -61,6 +61,7 @@ const CardForm = ({ open, onCloseModal, addToCardHandle, status, editData }) => 
     }, [status]);
 
     const editedData = {...data, id: editData.id};
+    
     return (
         <Modal open={open} onClose={onCloseModal} center classNames={{ modal: 'modalParent' }}>
             <h2 className="searchFormHeading">Search Form</h2>

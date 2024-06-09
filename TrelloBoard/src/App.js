@@ -69,6 +69,20 @@ function App() {
     });
   }
 
+  const deleteCard = (data) => {
+    const status = data.status || selectBoard;
+  
+    // Filter out the item with the matching id and status
+    const updatedData = board[status].filter(item => item.id !== data.id);
+  
+    // Update the board state with the filtered data
+    setBoard({
+      ...board,
+      [status]: updatedData
+    });
+  };
+  
+
   return (
     <div className="App">
       <h1 className='main-heading'>Trello Board</h1>
@@ -80,6 +94,7 @@ function App() {
             boardName='todos'
             heading='Todo'
             editCardHandle={editCardHandle}
+            deleteCard={deleteCard}
           />
         </div>
         <div className="boardWrap">
@@ -89,6 +104,7 @@ function App() {
             boardName='inProgress'
             heading='In Progress'
             editCardHandle={editCardHandle}
+            deleteCard={deleteCard}
           />
 
         </div>
@@ -99,6 +115,7 @@ function App() {
             boardName='review'
             heading='Review'
             editCardHandle={editCardHandle}
+            deleteCard={deleteCard}
           />
         </div>
         <div className="boardWrap">
@@ -108,6 +125,7 @@ function App() {
             boardName='done'
             heading='Done'
             editCardHandle={editCardHandle}
+            deleteCard={deleteCard}
           />
         </div>
       </div>
