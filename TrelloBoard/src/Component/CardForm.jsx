@@ -61,7 +61,7 @@ const CardForm = ({ open, onCloseModal, addToCardHandle, status, editData }) => 
     }, [status]);
 
     const editedData = {...data, id: editData.id};
-    
+
     return (
         <Modal open={open} onClose={onCloseModal} center classNames={{ modal: 'modalParent' }}>
             <h2 className="searchFormHeading">Search Form</h2>
@@ -79,7 +79,7 @@ const CardForm = ({ open, onCloseModal, addToCardHandle, status, editData }) => 
                             <option key={item.value} value={item.value}>{item.label}</option>
                         ))}
                     </select>
-                    <button className="submit-btn" type="submit" onClick={(e) => addToCardHandle(e, editedData)}>Submit</button>
+                    <button className="submit-btn" type="submit" disabled={data.title === ''} onClick={(e) => addToCardHandle(e, editedData)}>Submit</button>
                 </form>
             </div>
         </Modal>
