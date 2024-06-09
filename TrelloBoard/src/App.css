@@ -1,0 +1,91 @@
+
+.App {
+  background-color: #6544AB;
+  min-height: 100vh;
+  padding: 20px;
+}
+.main-heading {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+.boardWrap{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%; 
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  padding: 10px;
+}
+.heading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.todolist {
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px #D3D3D3;
+}
+.addToCard {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modalParent {
+  width: 300px;
+  border-radius: 10px;
+}
+.inputField {
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+.searchFormHeading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.submit-btn {
+  background-color: #6544AB;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.editBtn {
+  background-color: #6544AB;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
