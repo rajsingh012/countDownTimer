@@ -10,9 +10,7 @@ const Timer = ({duration, onExpire}) => {
     const [pauseTimer, setPauseTimer] = useState(false);
 
     useEffect(() => {
-        if(pauseTimer){
-            return;
-        }
+        if(pauseTimer) return;
         const timerId = setTimeout(() => {
             setTimeLeft(timeLeft - 1000);
         }, 1000);
