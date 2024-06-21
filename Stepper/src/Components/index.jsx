@@ -129,7 +129,6 @@ const Stepper = () => {
                         type='file'
                         id='resume'
                         onChange={handleChange}
-                        value={formData.resume}
                     />
                 </div>
                 <div className='stepper__form__input'>
@@ -139,7 +138,6 @@ const Stepper = () => {
                         type='file'
                         id='coverLetter'
                         onChange={handleChange}
-                        value={formData.coverLetter}
                     />
                 </div>
             </div>
