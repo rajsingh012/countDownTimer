@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "isClicked": false,
+        "isVisible": true
+    },
+    {
+        "id": 2,
+        "isClicked": false,
+        "isVisible": true
+    },
+    {
+        "id": 3,
+        "isClicked": false,
+        "isVisible": true
+    }, 
+    {
+        "id": 4,
+        "isClicked": false,
+        "isVisible": true
+    }, 
+    {
+        "id": 5,
+        "isClicked": false,
+        "isVisible": true
+    },
+    {
+        "id": 6,
+        "isClicked": false,
+        "isVisible": true
+    },
+    {
+        "id": 7,
+        "isClicked": false,
+        "isVisible": true
+    }
+]

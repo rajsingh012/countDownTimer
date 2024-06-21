@@ -38,6 +38,7 @@ const Watch = () => {
 
     return (
         <div className="stopwatch">
+            <h1>Stopwatch</h1>
             <h1 id="watch">{days} : {hours} : {minutes} : {seconds}</h1>
             <button className="stopwatch-button" onClick={startHandle}>Start</button>
             <button className="stopwatch-button" onClick={pauseHandle}>Pause</button>

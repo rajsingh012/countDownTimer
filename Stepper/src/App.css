@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  background-color: #041a48;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  background: #041a48;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.stepper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepper__step {
+  position: relative;
+  width: 200px;
+}
+
+.stepper__step::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.stepper__step--last {
+  width: 40px;
+}
+
+.stepper__step--last::before {
+  display: none;
+}
+
+.stepper__icon {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.stepper__label {
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  margin-top: 20px;
+}
+.buttonsWrap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+.stepper__button {
+  background: rgb(255, 123, 0);
+  color: #041a48;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.stepper__icon--active {
+  background: rgb(255, 123, 0);;
+}
+.stepper__step--activeLine::before {
+  background: rgb(255, 123, 0);;
+}
+.stepperForms {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.stepper__form__input {
+  padding: 10px;
+}
+.inputField {
+  padding: 10px;
+  border: 1px solid #041a48;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.tabels {
+  float: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.stepper__button[disabled] {
+  background: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
